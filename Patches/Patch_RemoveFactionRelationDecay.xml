@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+<Operation Class="PatchOperationConditional">
+    <xpath>*/FactionDef/goodwillDailyGain</xpath>
+    <nomatch Class="PatchOperationAdd">
+        <xpath>*/FactionDef/goodwillDailyGain</xpath>
+        <value>
+            <goodwillDailyGain>0.00</goodwillDailyGain>
+        </value>
+    </nomatch>
+    <match Class="PatchOperationReplace">
+        <xpath>*/FactionDef/goodwillDailyGain</xpath>
+        <value>
+            <goodwillDailyGain>0.00</goodwillDailyGain>
+        </value>
+    </match>
+</Operation>
+
+<Operation Class="PatchOperationConditional">
+    <xpath>*/FactionDef/goodwillDailyFall</xpath>
+    <nomatch Class="PatchOperationAdd">
+        <xpath>*/FactionDef/goodwillDailyFall</xpath>
+        <value>
+            <goodwillDailyFall>0.00</goodwillDailyFall>
+        </value>
+    </nomatch>
+    <match Class="PatchOperationReplace">
+        <xpath>*/FactionDef/goodwillDailyFall</xpath>
+        <value>
+            <goodwillDailyFall>0.00</goodwillDailyFall>
+        </value>
+    </match>
+</Operation>
+</Patch>
