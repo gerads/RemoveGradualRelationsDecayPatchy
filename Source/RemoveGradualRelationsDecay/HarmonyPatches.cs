@@ -1,4 +1,5 @@
 ﻿using HarmonyLib;
+using RimWorld;
 using System;
 using Verse;
 
@@ -13,7 +14,7 @@ namespace RemoveGradualRelationsDecay
 		{
 			var harmony = new Harmony(id: "rimworld.gerads.removegradualrelationsdecay");
 
-			harmony.Patch(AccessTools.Method(typeof(void), "CheckReachNaturalGoodwill"), prefix: new HarmonyMethod(patchType, "CheckReachNaturalGoodwillPrefix"));
+			harmony.Patch(AccessTools.Method(typeof(Faction), "CheckReachNaturalGoodwill"), prefix: new HarmonyMethod(patchType, nameof(CheckReachNaturalGoodwillPrefix)));
 		}
 
 		public static bool CheckReachNaturalGoodwillPrefix()
