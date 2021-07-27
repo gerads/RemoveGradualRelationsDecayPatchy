@@ -6,9 +6,10 @@
     <li>1.0</li>
     <li>1.1</li>
     <li>1.2</li>
+    <li>1.3</li>
   </supportedVersions>
   <packageId>gerads.RemoveGradualRelationsDecayPatchy</packageId>
   <steamAppId>1860686739</steamAppId>
   <url>https://github.com/gerads/RemoveGradualRelationsDecayPatchy</url>
-  <description>Removes goodwill gains and losses through an XML patch. Many thanks to CaptainHaywood for the original form of this mod!</description>
+  <description>Removes goodwill gains and losses through an XML patch or Harmony patch (1.3+). Many thanks to CaptainHaywood for the original form of this mod!</description>
 </ModMetaData>
